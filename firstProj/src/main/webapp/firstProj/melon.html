@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Melon::음악이 필요한 순간, 멜론 </title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/search-rolling.css">
+  <link rel="stylesheet" href="css/melon-chart.css">
+  <link rel="stylesheet" href="css/main-styling.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header_inner">
+      <!-- header 최상단부 -->
+      <nav class="top_menu">
+        <nav class="top_left">
+          <a href="/melon.html" title="멜론 티켓"> 멜론 티켓 </a>
+        </nav>
+        <nav class="top_right">
+          <ul>
+            <li>
+              <a href="#" title="이용권구매" class="ticketlink">
+                <img src="img/이용권구매.JPG" id="ticket">
+                <p>이용권구매</p>
+              </a>
+            </li>
+            <li> <a href="#" title="멜론혜택관"> 멜론혜택관 </a> </li>
+            <li> <a href="#" title="이벤트"> 이벤트 </a> </li>
+            <li> <a href="#" title="공지사항"> 공지사항 </a> </li>
+          </ul>
+        </nav>
+      </nav>
+      <!-- 로고, 검색창, 급상승 키워드 -->
+      <nav class="menu">
+        <nav class="menu_top">
+
+          <a href="#" title="MelOn 로고 - 홈으로 이동">
+            <img src="img/melonLogo.JPG">
+          </a>
+
+          <div class="inputfield">
+            <div class="inputDesign">
+              <input type="text" id="searchInput" title="검색 입력 편집창" autocomplete="off">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+
+          <!-- 실시간 검색어 -->
+          <div class="realtime_soar_keyword">
+            <p id="soaring">급상승</p>
+          </div>
+
+          <div id="content">
+            <dl id="rank-list">
+              <dd>
+                <ol>
+                  <li><a href="#">
+                      <strong style="color:tomato">1. </strong>태연</a>
+                  </li>
+                  <li><a href="#">
+                      <strong style="color:tomato">2. </strong>Christmas tree</a>
+                  </li>
+                  <li><a href="#">
+                      <strong style="color:tomato">3. </strong>별이 될게</a>
+                  </li>
+                  <li><a href="#">4. 해바라기 OST</a></li>
+                  <li><a href="#">5. BIGBANG</a></li>
+                  <li><a href="#">6. Bingo</a></li>
+                  <li><a href="#">7. 더보이즈(THE BOYZ)</a></li>
+                  <li><a href="#">8. 취중고백</a></li>
+                  <li><a href="#">9. 박효신</a></li>
+                  <li><a href="#">10. 기억날 그날이 와도</a></li>
+                </ol>
+              </dd>
+            </dl>
+            <dl id="rank-list-hover">
+              <dd>
+                <ol>
+                  <li>
+                    <p>1</p>
+                    <a href="#">태연</a>
+                  </li>
+                  <li>
+                    <p>2</p>
+                    <a href="#">Christmas tree</a>
+                  </li>
+                  <li>
+                    <p>3</p>
+                    <a href="#">별이 될게</a>
+                  </li>
+                  <li>
+                    <p>4</p>
+                    <a href="#">해바라기 OST</a>
+                  </li>
+                  <li>
+                    <p>5</p>
+                    <a href="#">BIGBANG</a>
+                  </li>
+                  <li>
+                    <p>6</p>
+                    <a href="#">Bingo</a>
+                  </li>
+                  <li>
+                    <p>7</p>
+                    <a href="#">더보이즈(THE BOYZ)</a>
+                  </li>
+                  <li>
+                    <p>8</p>
+                    <a href="#">취중고백</a>
+                  </li>
+                  <li>
+                    <p>9</p>
+                    <a href="#">박효신</a>
+                  </li>
+                  <li>
+                    <p>10</p>
+                    <a href="#">기억날 그날이 와도</a>
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+          </div>
+          <!-- 실시간 검색어 끝 -->
+
+          <!-- 우측상단 배너 -->
+          <aside class="cmn_banner">
+            <img src="img/slideBannerImg1.JPG" title="믿고 듣는 보컬 퀸, 태연 - 페이지이동">
+          </aside>
+
+        </nav>
+        <!-- 메뉴바 -->
+        <nav class="menubar">
+
+          <ul class="menu_left">
+            <li> <a><span>멜론차트</span></a> </li>
+            <li> <a><span>최신음악</span></a> </li>
+            <li> <a><span>장르음악</span></li>
+            <li> <a><span>멜론DJ</span></a> </li>
+            <li> <a><span>멜론TV</span></a> </li>
+            <li> <a><span>스타포스트</span></a> </li>
+            <li> <a><span>매거진</span></a> </li>
+            <li> <a><span>뮤직어워드</span></a> </li>
+            <li> <a><span>어학</span></a> </li>
+          </ul>
+
+          <ul class="menu_right">
+            <li><a class="myMusic"> <span>마이뮤직</span> </a></li>
+          </ul>
+
+        </nav>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="main">
+    <!-- 최신 앨범 (상단 메인) -->
+    <section class="new_album">
+      <h2>최신 앨범 ></h2>
+      <section class="section_na">
+        <ul class="new_album_cate">
+          <li class="category c1">전체</li>
+          <li class="category c2">가요</li>
+          <li class="category c3">TOP</li>
+          <li class="page_num">1/2</li>
+          <span class="buttons">
+            <div class="album_btn">
+              <a href="#" class="prev" title="이전"></a>
+              <a href="#" class="next" title="다음"></a>
+            </div>
+          </span>
+        </ul>
+      </section>
+
+      <div style="clear: both;"></div>
+      <!-- display : block -->
+      <acticle class="outer">
+        <article class="inner_list">
+          <article style="position: relative;">
+            <div class="hover_div1">
+              <h4 class="new_album_title">Midnight Guest</h4>
+              <p class="new_album_artist">프로미스나인</p>
+            </div>
+            <img src="img/promise9Album.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div2">
+              <h4 class="new_album_title">B</h4>
+              <p class="new_album_artist">뱀뱀(BamBam)</p>
+            </div>
+            <img src="img/baembaemAlbum.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div3">
+              <h4 class="new_album_title">Can't Control Myself</h4>
+              <p class="new_album_artist">태연(TAEYEON)</p>
+            </div>
+            <img src="img/taeyeonAlbum.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div4">
+              <h4 class="new_album_title">ˣ‿ˣ(SMiLEY)</h4>
+              <p class="new_album_artist">YENA(최예나)</p>
+            </div>
+            <img src="img/choiJenaAlbum.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div5">
+              <h4 class="new_album_title">일진에게 반했을 때 OST Part.2</h4>
+              <p class="new_album_artist">원필(DAY6)</p>
+            </div>
+            <img src="img/wonpilAlbum.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div6">
+              <h4 class="new_album_title">[REC.]</h4>
+              <p class="new_album_artist">유주(YUJU)</p>
+            </div>
+            <img src="img/yujuAlbum.JPG" class="new_album_img1">
+          </article>
+        </article>
+
+      </acticle>
+      <!-- display : block -->
+
+      <!-- display : none -->
+      <article class="outer1" style="display: none;">
+        <article class="inner_list">
+          <article style="position: relative;">
+            <div class="hover_div1">
+              <h4 class="new_album_title">365일</h4>
+              <p class="new_album_artist">송이한</p>
+            </div>
+            <img src="img/chart_img/365일-송이한.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div2">
+              <h4 class="new_album_title">조영수 리메이크</h4>
+              <p class="new_album_artist">케이시</p>
+            </div>
+            <img src="img/chart_img/조영수 리메이크-케이시.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div3">
+              <h4 class="new_album_title">선물</h4>
+              <p class="new_album_artist">나비(Navi)</p>
+            </div>
+            <img src="img/chart_img/선물-나비(Navi).JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div4">
+              <h4 class="new_album_title">pilimography</h4>
+              <p class="new_album_artist">원필</p>
+            </div>
+            <img src="img/chart_img/pilimography-원필.JPG" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div5">
+              <h4 class="new_album_title">see you soon</h4>
+              <p class="new_album_artist">OuiOui</p>
+            </div>
+            <img src="img/chart_img/see you soon - OuiOui.jfif" class="new_album_img1">
+          </article>
+          <article style="position: relative;">
+            <div class="hover_div6">
+              <h4 class="new_album_title">은하수</h4>
+              <p class="new_album_artist">Osshun Gum</p>
+            </div>
+            <img src="img/chart_img/은하수 - Osshun Gum.JPG" class="new_album_img1">
+          </article>
+        </article>
+      </article>
+      <!-- display : none -->
+    </section>
+
+    <!-- 이벤트 배너 -->
+    <section class="event_list">
+      <!-- 버튼 -->
+      <ol class="play_control">
+        <li class="indicators indi1"></li>
+        <li class="indicators indi2"></li>
+        <li class="indicators indi3"></li>
+      </ol>
+      <!-- 이벤트 이미지 -->
+      <article class="event_inner">
+        <article class="event_item event1">
+          <img src="img/event_kidmili.JPG" title="키드밀리">
+        </article>
+        <article class="event_item event2">
+          <img src="img/event ravi.JPG" title="키드밀리">
+        </article>
+        <article class="event_item event3">
+          <img src="img/event onepil.JPG" title="키드밀리">
+        </article>
+      </article>
+
+    </section>
+
+    <!-- 로그인  -->
+    <aside class="button_login">
+      <div class="top_area">
+        <p>멜론을 더 안전하게 이용하세요.</p>
+        <a href="#" title="회원가입 - 페이지 이동">회원가입</a>
+      </div>
+      <button>로그인</button>
+    </aside>
+
+    <!-- 콘서트 광고 배너 -->
+    <aside class="ad_concert">
+      <img src="img/이달의소녀콘서트이미지.JPG" title="티켓(이달소)">
+    </aside>
+
+    <div style="clear: both;"></div>
+
+    <!-- 인기있어요 (하단 메인)-->
+    <section class="hot_issue">
+
+      <h2>
+        <span class="title_link">인기 있어요</span>
+        <span class="txt_intro">지금 이슈가 되는 아티스트의 인기 컨텐츠입니다.</span>
+        <span class="page_num2">1/2</span>
+        <span class="buttons2">
+          <div class="album_btn2">
+            <a class="prev2" title="이전"></a>
+            <a class="next2" title="다음"></a>
+          </div>
+        </span>
+      </h2>
+
+      <!-- 1/2 page -->
+      <ul class="popularity" style="display: block;">
+        <li class="bg_album_frame_left">
+          <img src="img/moonbyulMV.JPG" title="독보적인 매력, 문별">
+        </li>
+
+        <li class="bg_album_frame_right1">
+          <img src="img/small_album1.JPG" title="역시 '믿듣탱'">
+          <p class="popularity_title" title="역시 '믿듣탱'">역시 '믿듣탱'</p>
+          <span class="pupularity_desc" title="역시 '믿듣탱'">
+            지독한 겨울 감성
+            <br>
+            "태연 Can't Control Myself"
+          </span>
+          <span class="popularity_bar">
+            <a href="#" title="멜론매거진">멜론매거진</a>
+            <p>조회 3562</p>
+          </span>
+        </li>
+
+        <li class="bg_album_frame_right2">
+          <img src="img/small_album2.JPG" title="레전드의 귀환">
+          <p class="popularity_title" title="레전드의 귀환">레전드의 귀환</p>
+          <span class="pupularity_desc" title="레전드의 귀환">
+            8번째 정규 앨범 [BAD MODE]
+            <br>
+            우타다 히카루 앨범 이야기
+          </span>
+          <span class="popularity_bar">
+            <a href="#" title="멜론매거진">멜론매거진</a>
+            <p>조회 1432</p>
+          </span>
+        </li>
+
+        <li class="bg_album_frame_right3">
+          <img src="img/small_album3.JPG" title="FKA 트위그스 새 믹스테이프 발매">
+          <p class="popularity_title" title="FKA 트위그스 새 믹스테이프 발매">FKA 트위그스 새 믹스테이프 발매</p>
+          <span class="pupularity_desc" title="FKA 트위그스 새 믹스테이프 발매">
+            [CAPRISONGS]로 돌아온
+            <br>
+            FKA 트위그스의 메세지!
+          </span>
+          <span class="popularity_bar">
+            <a href="#" title="멜론매거진">멜론매거진</a>
+            <p>조회 32</p>
+          </span>
+        </li>
+
+        <li class="bg_album_frame_bottom">
+          <div class="bottom_div1">
+            <img src="img/bottom_album1.JPG" title="무한한 가능성으로 가득한">
+            <h3 class="bottom_title" title="무한한 가능성으로 가득한">무한한 가능성으로 가득한</h3>
+            <span class="bottom_desc" title="무한한 가능성으로 가득한">뱀뱀(bambam)만의 세상</span>
+            <span class="popularity_bar_bottom">
+              <a href="#" title="멜론매거진">멜론매거진</a>
+              <p>조회 3562</p>
+            </span>
+          </div>
+          <div class="bottom_div2">
+            <img src="img/bottom_album2.JPG" title="ABNEW를 향한 진심">
+            <h3 class="bottom_title" title="ABNEW를 향한 진심">ABNEW를 향한 진심</h3>
+            <span class="bottom_desc" title="ABNEW를 향한 진심">에이비식스 콘셉 촬영 현장</span>
+            <span class="popularity_bar_bottom">
+              <a href="#" title="멜론매거진">멜론매거진</a>
+              <p>조회 2807</p>
+            </span>
+          </div>
+          <div class="bottom_div3">
+            <img src="img/bottom_album3.JPG" title="'여자친구' 유주">
+            <h3 class="bottom_title" title="'여자친구' 유주">'여자친구' 유주</h3>
+            <span class="bottom_desc" title="'여자친구' 유주">솔로 [MV]놀이(play)</span>
+            <span class="popularity_bar_bottom">
+              <a href="#" title="멜론TV">멜론TV</a>
+              <p>조회 2729</p>
+            </span>
+          </div>
+          <div class="bottom_div4">
+            <img src="img/bottom_album4.JPG" title="스텔라장 Blue Turns Pink">
+            <h3 class="bottom_title" title="스텔라장 Blue Turns Pink">스텔라장 Blue Turns Pink</h3>
+            <span class="bottom_desc" title="스텔라장 Blue Turns Pink">[팬 메이드 라이브]</span>
+            <span class="popularity_bar_bottom">
+              <a href="#" title="멜론TV">멜론TV</a>
+              <p>조회 3562</p>
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 2/2 page -->
+      <ul class="popularity2" style="display: none;">
+        <li class="popular_div" style="float: left;">
+          <img src="img/popular_album/오묘해 (밴드 Ver) - 휘인 (Whee In).JPG" title="오묘해 (밴드 Ver) - 휘인 (Whee In)">
+          <h3 title="오묘해 (밴드 Ver) - 휘인 (Whee In)">오묘해(밴드 Ver) - 휘인 (Whee In)</h3>
+          <span title="오묘해 (밴드 Ver) - 휘인 (Whee In)">유희열의 스케치북 576장</span>
+          <div class="popular_bottom">
+            <a href="#" title="멜론TV">멜론 TV</a>
+            <p>조회 1,750</p>
+          </div>
+        </li>
+        <li class="popular_div" style="float: left;">
+          <img src="img/popular_album/모든 날, 모든 순간 - 이찬원.JPG" title="모든 날, 모든 순간 - 이찬원">
+          <h3 title="모든 날, 모든 순간 - 이찬원">모든 날, 모든 순간 - 이찬원</h3>
+          <span title="모든 날, 모든 순간 - 이찬원">유희열의 스케치북 576장</span>
+          <div class="popular_bottom">
+            <a href="#" title="멜론TV">멜론 TV</a>
+            <p>조회 4,744</p>
+          </div>
+        </li>
+        <li class="popular_div" style="float: left;">
+          <img src="img/popular_album/소식 - 안예은.JPG" title="소식 - 안예은">
+          <h3 title="소식 - 안예은">소식 - 안예은</h3>
+          <span title="소식 - 안예은">유희열의 스케치북 576장</span>
+          <div class="popular_bottom">
+            <a href="#" title="멜론TV">멜론 TV</a>
+            <p>조회 335</p>
+          </div>
+        </li>
+        <li class="popular_div" style="clear:both; float:left;">
+          <img src="img/popular_album/참 좋은 날 - 이찬원.JPG" title="참 좋은 날 - 이찬원">
+          <h3 title="참 좋은 날 - 이찬원">참 좋은 날 - 이찬원</h3>
+          <span title="참 좋은 날 - 이찬원">유희열의 스케치북 576장</span>
+          <div class="popular_bottom">
+            <a href="#" title="멜론TV">멜론 TV</a>
+            <p>조회 1,921</p>
+          </div>
+        </li>
+        <li class="popular_div" style="float: left;">
+          <img src="img/popular_album/봄이 온다면 - 안예은.JPG" title="봄이 온다면 - 안예은">
+          <h3 title="봄이 온다면 - 안예은">봄이 온다면 - 안예은</h3>
+          <span title="봄이 온다면 - 안예은">유희열의 스케치북 576장</span>
+          <div class="popular_bottom">
+            <a href="#" title="멜론TV">멜론 TV</a>
+            <p>조회 705</p>
+          </div>
+        </li>
+        <li class="popular_div" style="float: left;">
+          <img src="img/popular_album/FEVER - 휘인 (Whee In).JPG" title="FEVER - 휘인 (Whee In)">
+          <h3 title="FEVER - 휘인 (Whee In)">FEVER - 휘인 (Whee In)</h3>
+          <span title="FEVER - 휘인 (Whee In)">유희열의 스케치북 576장</span>
+          <div class="popular_bottom">
+            <a href="#" title="멜론TV">멜론 TV</a>
+            <p>조회 528</p>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- 멜론차트 -->
+    <section class="chart">
+      <h2>멜론차트</h2>
+      <section class="wrap_chart">
+        <ul>
+          <li class="chart1">
+            <span class="chart1_btn">TOP100</span>
+            <div class="chart1_box">
+              <span class="chart_time">2022.02.08 <strong>22:00</strong> 기준</span>
+              <ul class="rank_list">
+                <li><i class="rank" style="color: #7CB710;">1</i>
+                  <div class="chart_img"><img src="img/chart/신사와 아가씨 OST Part.2.jfif" title="신사와 아가씨 OST Part.2"></div>
+                  <div class="song"><span title="사랑은 늘 도망가">사랑은 늘 도망가</span></div>
+                  <div class="artist"><span title="임영웅 - 페이지 이동">임영웅</span></div>
+                </li>
+                <li><i class="rank" style="color: #7CB710;">2</i>
+                  <div class="chart_img"><img src="img/chart/취중고백.jfif" title="취중고백"></div>
+                  <div class="song"><span title="취중고백">취중고백</span></div>
+                  <div class="artist"><span title="김민석 (멜로망스) - 페이지 이동">김민석 (멜로망스)</span></div>
+                </li>
+                <li><i class="rank" style="color: #7CB710;">3</i>
+                  <div class="chart_img"><img src="img/chart/호랑수월가.jfif" title="호랑수월가"></div>
+                  <div class="song"><span title="호랑수월가">호랑수월가</span></div>
+                  <div class="artist"><span title="탑현 - 페이지 이동">탑현</span></div>
+                </li>
+                <li><i class="rank">4</i>
+                  <div class="chart_img"><img src="img/chart/Step Back.jfif" title="Step Back"></div>
+                  <div class="song"><span title="Step Back">Step Back</span></div>
+                  <div class="artist"><span title="GOT the beat - 페이지 이동">GOT the beat</span></div>
+                </li>
+                <li><i class="rank">5</i>
+                  <div class="chart_img"><img src="img/chart/ELEVEN.jfif" title="ELEVEN"></div>
+                  <div class="song"><span title="ELEVEN">ELEVEN</span></div>
+                  <div class="artist"><span title="IVE (아이브) - 페이지 이동">IVE (아이브)</span></div>
+                </li>
+                <li><i class="rank">6</i>
+                  <div class="chart_img"><img src="img/chart/쇼미더머니 10 Episode 2.jfif" title="쇼미더머니 10 Episode 2"></div>
+                  <div class="song"><span title="회전목마 (Feat. Zion.T, 원슈타인) (Prod. Slom)">회전목마 (Feat. Zion.T, 원슈타인)
+                      (Prod. Slom)</span></div>
+                  <div class="artist"><span title="sokodomo - 페이지 이동">sokodomo</span></div>
+                </li>
+                <li><i class="rank">7</i>
+                  <div class="chart_img"><img src="img/chart/쇼미더머니 10 Episode 3.jfif" title="쇼미더머니 10 Episode 3"></div>
+                  <div class="song"><span title="리무진 (Feat. MINO) (Prod. GRAY)">리무진 (Feat. MINO) (Prod. GRAY)</span>
+                  </div>
+                  <div class="artist"><span title="BE'O (비오) - 페이지 이동">BE'O (비오)</span></div>
+                </li>
+                <li><i class="rank">8</i>
+                  <div class="chart_img"><img src="img/chart/Counting Stars.jfif" title="Counting Stars"></div>
+                  <div class="song"><span title="Counting Stars (Feat. Beenzino)">Counting Stars (Feat. Beenzino)</span>
+                  </div>
+                  <div class="artist"><span title="BE'O (비오) - 페이지 이동">BE'O (비오)</span></div>
+                </li>
+                <li><i class="rank">9</i>
+                  <div class="chart_img"><img src="img/chart/Dreams Come True - SM STATION.jfif"
+                      title="Dreams Come True - SM STATION"></div>
+                  <div class="song"><span title="Dreams Come True">Dreams Come True</span></div>
+                  <div class="artist"><span title="aespa - 페이지 이동">aespa</span></div>
+                </li>
+                <li><i class="rank">10</i>
+                  <div class="chart_img"><img src="img/chart/이제는 미스터 트롯 우승자 특전곡.jfif" title="이제는 미스터 트롯 우승자 특전곡"></div>
+                  <div class="song"><span title="이제 나만 믿어요">이제 나만 믿어요</span></div>
+                  <div class="artist"><span title="임영웅 - 페이지 이동">임영웅</span></div>
+                </li>
+              </ul>
+              <div class="chart_additional_area">
+                <button class="shuffle_btn" title="셔플듣기"><img src="img/chart/shuffle.png" class="shuffle"><span
+                    class="shuffle_span">셔플듣기</span></button>
+                <span class="all_view" title="멜론차트 더보기">더보기</span>
+              </div>
+            </div>
+          </li>
+          <li class="chart2">
+            <span class="chart2_btn">POP</span>
+            <div class="chart2_box">
+              <span class="chart_time">2022.02.07 기준</span>
+              <ul class="rank_list">
+                <li><i class="rank" style="color: #7CB710;">1</i>
+                  <div class="chart_img"><img src="img/chart/STAY.jfif" title="STAY"></div>
+                  <div class="song"><span title="STAY">STAY</span></div>
+                  <div class="artist"><span title="The Kid LAROI - 페이지 이동">The Kid LAROI</span>, <span
+                      title="Justin Bieber - 페이지 이동">Justin Bieber</span></div>
+                </li>
+                <li><i class="rank" style="color: #7CB710;">2</i>
+                  <div class="chart_img"><img src="img/chart/abcdefu.jfif" title="abcdefu"></div>
+                  <div class="song"><span title="abcdefu">abcdefu</span></div>
+                  <div class="artist"><span title="GAYLE - 페이지 이동">GAYLE</span></div>
+                </li>
+                <li><i class="rank" style="color: #7CB710;">3</i>
+                  <div class="chart_img"><img src="img/chart/My Universe.jfif" title="My Universe"></div>
+                  <div class="song"><span title="My Universe">My Universe</span></div>
+                  <div class="artist"><span title="Coldplay - 페이지 이동">Coldplay</span>, <span
+                      title="방탄소년단 - 페이지 이동">방탄소년단</span></div>
+                </li>
+                <li><i class="rank">4</i>
+                  <div class="chart_img"><img src="img/chart/=.jfif" title="="></div>
+                  <div class="song"><span title="Bad Habits">Bad Habits</span></div>
+                  <div class="artist"><span title="Ed Sheeran - 페이지 이동">Ed Sheeran</span></div>
+                </li>
+                <li><i class="rank">5</i>
+                  <div class="chart_img"><img src="img/chart/Off My Face.jfif" title="Justice (The Complete Edition)">
+                  </div>
+                  <div class="song"><span title="Off My Face">Off My Face</span></div>
+                  <div class="artist"><span title="Justin Bieber - 페이지 이동">Justin Bieber</span></div>
+                </li>
+                <li><i class="rank">6</i>
+                  <div class="chart_img"><img src="img/chart/Savage Love (Laxed - Siren Beat) [BTS Remix].jfif"
+                      title="Savage Love (Laxed - Siren Beat) [BTS Remix]"></div>
+                  <div class="song"><span title="Savage Love (Laxed - Siren Beat) (BTS Remix)">Savage Love (Laxed -
+                      Siren Beat) (BTS Remix)</span></div>
+                  <div class="artist"><span title="Jawsh 685 - 페이지 이동">Jawsh 685</span>, <span
+                      title="Jason Derulo - 페이지 이동">Jason Derulo</span>, <span title="방탄소년단 - 페이지 이동">방탄소년단</span></div>
+                </li>
+                <li><i class="rank">7</i>
+                  <div class="chart_img"><img src="img/chart/Peaches (Feat. Daniel Caesar & Giveon).jfif"
+                      title="Justice (The Complete Edition)"></div>
+                  <div class="song">
+                    <p class="age_19"></p><span title="Peaches (Feat. Daniel Caesar & Giveon)">Peaches (Feat. Daniel
+                      Caesar & Giveon)</span>
+                  </div>
+                  <div class="artist"><span title="aespa - 페이지 이동">Justin Bieber</span></div>
+                </li>
+                <li><i class="rank">8</i>
+                  <div class="chart_img"><img src="img/chart/Snowman.jfif"
+                      title="Everyday Is Christmas (Snowman Deluxe Edition)"></div>
+                  <div class="song"><span title="Snowman">Snowman</span></div>
+                  <div class="artist"><span title="Sia - 페이지 이동">Sia</span></div>
+                </li>
+                <li><i class="rank">9</i>
+                  <div class="chart_img"><img src="img/chart/Stronger (What Doesn't Kill You).jfif"
+                      title="Stronger (What Doesn't Kill You) (Digital Audio Bundle)"></div>
+                  <div class="song"><span title="Stronger (What Doesn't Kill You)">Stronger (What Doesn't Kill
+                      You)</span></div>
+                  <div class="artist"><span title="Kelly Clarkson - 페이지 이동">Kelly Clarkson</span></div>
+                </li>
+                <li><i class="rank">10</i>
+                  <div class="chart_img"><img src="img/chart/2002.jfif" title="Speak Your Mind (Deluxe)"></div>
+                  <div class="song"><span title="2002">2002</span></div>
+                  <div class="artist"><span title="Anne-Marie - 페이지 이동">Anne-Marie</span></div>
+                </li>
+              </ul>
+              <div class="chart_additional_area">
+                <button class="shuffle_btn" title="셔플듣기"><img src="img/chart/shuffle.png" class="shuffle"><span
+                    class="shuffle_span">셔플듣기</span></button>
+                <span class="all_view" title="멜론차트 더보기">더보기</span>
+              </div>
+            </div>
+          </li>
+          <li class="chart3">
+            <span class="chart3_btn">☆ 아티스트</span>
+            <div class="chart3_box">
+              <span class="chart_time">2022.02.07 기준</span>
+              <ul class="rank_list">
+                <li><i class="rank" style="color: #7CB710;">1</i>
+                  <div class="chart_img"><img src="img/chart/아이유.jfif" title="아이유"></div>
+                  <div class="artist"><span title="아이유">아이유</span></div><span class="fan_btn" title="아이유 팬맺기"></span>
+                </li>
+                <li><i class="rank" style="color: #7CB710;">2</i>
+                  <div class="chart_img"><img src="img/chart/임영웅.jfif" title="임영웅"></div>
+                  <div class="artist"><span title="임영웅">임영웅</span></div><span class="fan_btn" title="임영웅 팬맺기"></span>
+                </li>
+                <li><i class="rank" style="color: #7CB710;">3</i>
+                  <div class="chart_img"><img src="img/chart/원필 (DAY6).jfif" title="원필 (DAY6)"></div>
+                  <div class="artist"><span title="원필 (DAY6)">원필 (DAY6)</span></div><span class="fan_btn"
+                    title="원필 (DAY6) 팬맺기"></span>
+                </li>
+                <li><i class="rank">4</i>
+                  <div class="chart_img"><img src="img/chart/방탄소년단.jfif" title="방탄소년단"></div>
+                  <div class="artist"><span title="방탄소년단">방탄소년단</span></div><span class="fan_btn"
+                    title="방탄소년단 팬맺기"></span>
+                </li>
+                <li><i class="rank">5</i>
+                  <div class="chart_img"><img src="img/chart/aespa.jfif" title="aespa"></div>
+                  <div class="artist"><span title="aespa">aespa</span></div><span class="fan_btn"
+                    title="aespa 팬맺기"></span>
+                </li>
+                <li><i class="rank">6</i>
+                  <div class="chart_img"><img src="img/chart/태연 (TAEYEON).jfif" title="태연 (TAEYEON)"></div>
+                  <div class="artist"><span title="태연 (TAEYEON)">태연 (TAEYEON)</span></div><span class="fan_btn"
+                    title="태연 (TAEYEON) 팬맺기"></span>
+                </li>
+                <li><i class="rank">7</i>
+                  <div class="chart_img"><img src="img/chart/이승윤.jfif" title="이승윤"></div>
+                  <div class="artist"><span title="이승윤">이승윤</span></div><span class="fan_btn" title="아이유이승윤 팬맺기"></span>
+                </li>
+                <li><i class="rank">8</i>
+                  <div class="chart_img"><img src="img/chart/BE'O (비오).jfif" title="BE'O (비오)"></div>
+                  <div class="artist"><span title="BE'O (비오)">BE'O (비오)</span></div><span class="fan_btn"
+                    title="BE'O (비오) 팬맺기"></span>
+                </li>
+                <li><i class="rank">9</i>
+                  <div class="chart_img"><img src="img/chart/이무진.jfif" title="이무진"></div>
+                  <div class="artist"><span title="이무진">이무진</span></div><span class="fan_btn" title="이무진 팬맺기"></span>
+                </li>
+                <li><i class="rank">10</i>
+                  <div class="chart_img"><img src="img/chart/이찬원.jfif" title="이찬원"></div>
+                  <div class="artist"><span title="이찬원">이찬원</span></div><span class="fan_btn" title="이찬원 팬맺기"></span>
+                </li>
+              </ul>
+              <div class="chart_additional_area">
+                <span class="all_view" title="멜론차트 더보기">더보기</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- 공지사항 -->
+    <section class="notice">
+      <dl>
+        <dt class="label">
+          <a href="#" title="공지사항">공지사항</a>
+        </dt>
+        <dd class="notice_title">
+          <a href="#" title="[멜론어학] 종료 강좌 안내" class="mlog">[멜론어학] 종료 강좌 안내</a>
+        </dd>
+        <dd class="date">2022.01.10</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <footer class="footer_inner">
+      
+      <!-- footer 메뉴 -->
+      <article class="footer_menu">
+        <ul>
+          <li> <a> 멜론6.0 둘러보기 </a> </li>
+          <li> <a> 멜론스튜디오 </a> </li>
+          <li> <a> windows 플레이어 </a> </li>
+          <li> <a> Mac 플레이어 </a> </li>
+          <li> <a> iPad </a> </li>
+          <li> <a> 고객센터 </a> </li>
+        </ul>
+      </article>
+
+      <!-- footer 정책 -->
+      <article class="footer_policy">
+        <li class="first_child">이용약관</li>
+        <li><strong>위치기반서비스 이용약관</strong></li>
+        <li><strong>개인정보처리방침</strong></li>
+        <li>청소년보호정책</li>
+        <li>제휴/프로모션문의</li>
+        <li>이메일주소무단수집거부</li>
+        <li>파트너센터</li>
+      </article>
+
+      <!-- footer 정보 -->
+      <article class="footer_info">
+        <li class="first"> <strong> (주)카카오엔터테인먼트 </strong> &nbsp 경기도 성남시 분당구 판교역로 221 </li>
+        <li> 대표이사 : 이진수, 김성수 </li>
+        <li> 사업자등록번호 : 220-88-02594 </li>
+        <li> 통신판매업신고번호 : 2018-성남분당B-0004 <span class="info_check"> 사업자정보확인 </sapn>
+        </li>
+        <br>
+        <li class="first"> 문의전화 : 1566-7727 (평일 09:00-18:00, 유료) </li>
+        <li> 이메일 : <span class="email"> melon_info@kakaoent.com </span> </li>
+        <li> 호스팅서비스사업자 : (주)카카오엔터테인먼트 </li>
+        <li> <span class="corporation"> © Kakao Entertainment Corp. </span> </li>
+      </article>
+
+    </footer>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+  <script src="js/search-rolling.js" type="text/javascript"></script>
+  <script src="js/main-album-slide.js"></script>
+  <script src="js/popular-slide.js"></script>
+  <script src="js/event-list.js"></script>
+  <script src="js/melon-chart.js"></script>
+</body>
+
+</html>
